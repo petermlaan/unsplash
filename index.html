@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Unsplash</title>
+</head>
+<body>
+    <form id="frmSearch">
+        <input id="txtQuery" type="search" required />
+        <input id="btnSearch" type="button" value="Sök" />
+        <label for="selPerPage">Bilder per sida:</label>
+        <select id="selPerPage">
+            <option>10</option>
+            <option>20</option>
+            <option>30</option>
+        </select>
+        <input id="btnPrevPage" type="button" value="Föreg sida" />
+        <input id="btnNextPage" type="button" value="Nästa sida" />
+    </form>
+    <section id="secImages"></section>
+</body>
+</html>
