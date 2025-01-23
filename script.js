@@ -1,15 +1,13 @@
-const ACCESS_KEY = "";
-const BASE_URL = "https://api.unsplash.com/";
 
-const hSearch = document.querySelector("#btnSearch");
-hSearch.addEventListener("click", onSearch);
-const hNextPage = document.querySelector("#btnNextPage");
-hNextPage.addEventListener("click", onNextPage);
-const hPrevPage = document.querySelector("#btnPrevPage");
-hPrevPage.addEventListener("click", onPrevPage);
+// ACCESS_KEY is defined in ignore.js
+const BASE_URL = "https://api.unsplash.com/";
 
 let gQuery = "";
 let gPage = 1;
+
+document.querySelector("#btnSearch").addEventListener("click", onSearch);
+document.querySelector("#btnNextPage").addEventListener("click", onNextPage);
+document.querySelector("#btnPrevPage").addEventListener("click", onPrevPage);
 
 async function onSearch(e) {
     e.preventDefault();
